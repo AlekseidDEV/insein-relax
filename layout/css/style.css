@@ -1374,7 +1374,7 @@ template, [hidden] {
     }
 }
 
-.formula-item-popup-01:before {
+.formula-item-popup-01::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -1555,6 +1555,8 @@ template, [hidden] {
     }
 }
 
+
+
 .repair-types-title span {
     line-height: 30px;
 }
@@ -1590,6 +1592,28 @@ template, [hidden] {
         height: 150px;
         background: url(../images/repair-types/title_mobile.svg);
     }
+}
+
+
+
+.active_slider{
+    display: block !important;
+}
+
+.types-repair1,
+.types-repair2,
+.types-repair3,
+.types-repair4,
+.types-repair5{
+    display: none;
+}
+
+.active-slide-repair{
+    display: block !important;
+}
+
+.repair-types-slider__slide{
+    display: none;
 }
 
 .repair-types-slider {
@@ -2241,6 +2265,11 @@ div.wave-block:nth-child(17):after {
     }
 }
 
+.wrapper-port_slider{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 .portfolio-slider {
     position: relative;
     display: -webkit-box;
@@ -2253,7 +2282,6 @@ div.wave-block:nth-child(17):after {
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-    overflow: hidden;
     z-index: 1;
 }
 
@@ -7992,6 +8020,7 @@ div.wave-block:nth-child(17):after {
 
 .active-item {
     font-size: 20px;
+    visibility: visible;
     opacity: 1;
 }
 
@@ -8065,6 +8094,14 @@ div.wave-block:nth-child(17):after {
 
 .active-item-partners svg path {
     fill: #B8A494;
+}
+
+.problems-item__icon_c{
+    transform: rotate(180deg);
+}
+
+.problems-item__icon_c p{
+    transform: rotate(180deg);
 }
 
 .active-item .problems-item__icon {
