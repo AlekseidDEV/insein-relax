@@ -1,4 +1,6 @@
+import { gallSlider } from "./gallslider"
 import { animate } from "./helpers"
+
 export const portSlider = () => {
     const portfolioBlock = document.querySelector('#portfolio')
     const wrapperSlides = document.querySelector('.wrapper-port_slider')
@@ -34,6 +36,7 @@ export const portSlider = () => {
          
         //     },
         // });
+        // *TODO: продумать как сделать переключение слайдера
     }
 
 
@@ -41,7 +44,7 @@ export const portSlider = () => {
 
     portfolioBlock.addEventListener('click', (e) => {
         if(e.target.className === 'portfolio-slider__slide-frame'){
-            console.log('gall slider');
+            gallSlider()
         } else if(e.target.closest('#portfolio-arrow_right')){
             fadeNext()
         }

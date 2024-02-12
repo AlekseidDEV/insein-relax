@@ -8,6 +8,11 @@ import { privacyLink } from "./modules/privacylink";
 import { sliderType } from "./modules/slidertype";
 import { formulaItem } from "./modules/formulaitem";
 import { portSlider } from "./modules/portfolioslider";
+import { contarctSlider } from "./modules/contractpopup";
+import { popupConsult } from "./modules/popupconsult";
+import { reviewSlider } from "./modules/reviewslider";
+import { accordModule } from "./modules/accordion";
+import { repairModule } from "./modules/repairmodal";
 
 numbDrop()
 if(window.innerWidth > 576){
@@ -27,11 +32,19 @@ document.addEventListener('submit', (e) => {
 document.addEventListener('click', (e) => {
     if(e.target.className === 'link-privacy'){
         privacyLink('.popup-privacy')
+    } else if(e.target.className === 'transparency-item__img'){
+        contarctSlider()
+        // *TODO подумать над мобильным слайдером для документов
+    } else if(e.target.matches('.button_wide ')){
+        popupConsult()
     }
 })
 sliderType()
 formulaItem()
 portSlider()
+reviewSlider()
+accordModule()
+repairModule()
 
 maskPhone('input[name="phone"]')
 

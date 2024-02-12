@@ -1,4 +1,3 @@
-import { sliderType } from "./slidertype"
 import { tabsSlider } from "./tabsslider"
 
 export const repairBlock = () => {
