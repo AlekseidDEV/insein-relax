@@ -34,7 +34,6 @@ document.addEventListener('click', (e) => {
         privacyLink('.popup-privacy')
     } else if(e.target.className === 'transparency-item__img'){
         contarctSlider()
-        // *TODO подумать над мобильным слайдером для документов
     } else if(e.target.matches('.button_wide ')){
         popupConsult()
     }
@@ -45,6 +44,7 @@ portSlider()
 reviewSlider()
 accordModule()
 repairModule()
+
 
 maskPhone('input[name="phone"]')
 

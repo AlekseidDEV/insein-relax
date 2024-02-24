@@ -2267,8 +2267,11 @@ div.wave-block:nth-child(17):after {
 
 .wrapper-port_slider{
     overflow: hidden;
+    max-width: 1034px;
+    width: 100%;
     border-radius: 10px;
 }
+
 
 .portfolio-slider {
     position: relative;
@@ -5695,6 +5698,8 @@ div.wave-block:nth-child(17):after {
     }
 }
 
+
+
 .popup-repair-types-content-table__list {
     border: 1px solid #FFFFFF;
     width: 100%;
@@ -5706,6 +5711,11 @@ div.wave-block:nth-child(17):after {
     text-align: center;
     border-collapse: collapse;
     background: #FBFAF8;
+    display: none;
+}
+
+.active_table{
+    display: block;
 }
 
 .popup-repair-types-content-table__list tr {
