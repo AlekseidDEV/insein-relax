@@ -13,13 +13,18 @@ import { popupConsult } from "./modules/popupconsult";
 import { reviewSlider } from "./modules/reviewslider";
 import { accordModule } from "./modules/accordion";
 import { repairModule } from "./modules/repairmodal";
+import { userToken } from "./modules/usertoken";
 
+
+userToken('notAuthorized')
 numbDrop()
+
 if(window.innerWidth > 576){
     popupMenu('right', 639)
 } else if(window.innerWidth <= 576){
     popupMenu('top', 735)
 }
+
 btnUpFunc()
 repairBlock()
 
@@ -38,6 +43,7 @@ document.addEventListener('click', (e) => {
         popupConsult()
     }
 })
+
 sliderType()
 formulaItem()
 portSlider()

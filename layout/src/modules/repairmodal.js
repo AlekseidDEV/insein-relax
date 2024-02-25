@@ -45,7 +45,7 @@ export const repairModule = () => {
             method: 'GET'
         }).then((r) => r.json())
         .then((data) => {
-            dataServer = data
+            dataServer = data.dataService
             renderCont()
         })
     }
