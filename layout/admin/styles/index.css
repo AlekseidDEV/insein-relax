@@ -57,6 +57,7 @@ body {
     cursor: pointer;
 }
 
+.button-ui_edit,
 .button-ui_firm {
     background-color: var(--firm_color);
     height: 44px;
@@ -67,6 +68,7 @@ body {
     transition: background-color var(--transition_time);
     margin: 25px auto 10px;
 }
+.button-ui_edit,
 .button-ui_firm:hover {
     background-color: var(--hover_color);
 }

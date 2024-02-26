@@ -24,8 +24,6 @@ export const contarctSlider = () => {
 
         activeDocs.classList.remove('active_transparancy')
         slides[count].classList.add('active_transparancy')
-
-        console.log(count);
     }
 
     const prevDocum = () => {
@@ -41,8 +39,6 @@ export const contarctSlider = () => {
 
         activeDocs.classList.remove('active_transparancy')
         slides[count].classList.add('active_transparancy')
-
-        console.log(count);
     }
 
 

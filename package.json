@@ -7,7 +7,7 @@
     "clear": "rd /s /q dist",
     "dev": "cross-env NODE_ENV=development webpack --watch --mode development",
     "prod": "cross-env NODE_ENV=production webpack --mode production",
-    "server" : "json-server --watch crm-backend/db.json --port=4545"
+    "server" : "json-server --watch ./crm-backend/db.json --port=4545"
   },
   "author": "AlekseiDev",
   "license": "ISC",
